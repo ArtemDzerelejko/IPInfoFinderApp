@@ -28,6 +28,7 @@ struct CustomButton: View {
                 .background(backgroundColor)
                 .foregroundColor(textColor)
                 .cornerRadius(cornerRadius)
+                .lineSpacing(20)
         }
         .buttonStyle(PlainButtonStyle())
     }

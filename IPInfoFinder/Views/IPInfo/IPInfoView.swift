@@ -19,7 +19,7 @@ struct IPInfoView: View {
                     }
                 }
                 .frame(maxWidth: .infinity)
-                .padding(.horizontal, 16)
+                .padding(.horizontal, 12)
                 .padding(.vertical, 12)
                 .overlay(
                     RoundedRectangle(cornerRadius: 10)
