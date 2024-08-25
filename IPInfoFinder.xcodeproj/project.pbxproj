@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACBFB8A32C76898D00D3841F /* IPInfoFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBFB8A22C76898D00D3841F /* IPInfoFinderApp.swift */; };
+		ACBFB8A52C76898D00D3841F /* IPDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBFB8A42C76898D00D3841F /* IPDetailsView.swift */; };
+		ACBFB8A72C76898E00D3841F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBFB8A62C76898E00D3841F /* Assets.xcassets */; };
+		ACBFB8AA2C76898E00D3841F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBFB8A92C76898E00D3841F /* Preview Assets.xcassets */; };
+		ACBFB8B22C7689A900D3841F /* IPInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBFB8B12C7689A900D3841F /* IPInfo.swift */; };
+		ACBFB8B42C7689BD00D3841F /* IPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBFB8B32C7689BD00D3841F /* IPResponse.swift */; };
+		ACBFB8B72C7689E000D3841F /* IPInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBFB8B62C7689E000D3841F /* IPInfoViewModel.swift */; };
+		ACBFB8BA2C768A2400D3841F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBFB8B92C768A2400D3841F /* NetworkService.swift */; };
+		ACBFB8BD2C768A4300D3841F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBFB8BC2C768A4300D3841F /* Constants.swift */; };
+		ACBFB8C12C768FC700D3841F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBFB8C02C768FC700D3841F /* MapView.swift */; };
+		ACD0CF162C769D5B0099AE62 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACD0CF152C769D5B0099AE62 /* Montserrat-Bold.ttf */; };
+		ACD0CF182C769D710099AE62 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACD0CF172C769D710099AE62 /* Montserrat-Medium.ttf */; };
+		ACD0CF1A2C769D800099AE62 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACD0CF192C769D800099AE62 /* Montserrat-Regular.ttf */; };
+		ACD0CF1C2C76A14F0099AE62 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CF1B2C76A14F0099AE62 /* AppFont.swift */; };
+		ACD0CF722C7B65F30099AE62 /* InfoTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CF712C7B65F30099AE62 /* InfoTitles.swift */; };
+		ACD0CF742C7B6AF50099AE62 /* IPInfoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CF732C7B6AF50099AE62 /* IPInfoError.swift */; };
+		ACD0CF762C7B6F4E0099AE62 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CF752C7B6F4E0099AE62 /* NetworkError.swift */; };
+		ACD0CF842C7B75DA0099AE62 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CF832C7B75DA0099AE62 /* CustomButton.swift */; };
+		ACD0CF862C7B75FF0099AE62 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CF852C7B75FF0099AE62 /* CustomTextField.swift */; };
+		ACD0CF882C7B76800099AE62 /* IPValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CF872C7B76800099AE62 /* IPValidator.swift */; };
+		ACD0CF8B2C7B77D90099AE62 /* CustomMapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CF8A2C7B77D90099AE62 /* CustomMapMarker.swift */; };
+		ACD0CF8D2C7B77E70099AE62 /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CF8C2C7B77E70099AE62 /* MapPin.swift */; };
+		ACD0CF8F2C7B77F60099AE62 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CF8E2C7B77F60099AE62 /* MapViewModel.swift */; };
+		ACD0CF912C7B79730099AE62 /* IPInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CF902C7B79730099AE62 /* IPInfoView.swift */; };
+		ACD0CF932C7B798A0099AE62 /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CF922C7B798A0099AE62 /* InfoRow.swift */; };
+		ACD0CF952C7B799B0099AE62 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CF942C7B799B0099AE62 /* CustomAlertView.swift */; };
+		ACD0CF972C7B7A090099AE62 /* CustomErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CF962C7B7A090099AE62 /* CustomErrorView.swift */; };
+		ACD0CF9A2C7B7C270099AE62 /* Extensions+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CF992C7B7C270099AE62 /* Extensions+UIApplication.swift */; };
+		ACD0CF9C2C7B7C820099AE62 /* Extensions+NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CF9B2C7B7C820099AE62 /* Extensions+NetworkError.swift */; };
+		ACD0CF9E2C7B7CD20099AE62 /* Extensions+IPInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CF9D2C7B7CD20099AE62 /* Extensions+IPInfo.swift */; };
+		ACD0CFA42C7B81500099AE62 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CFA32C7B81500099AE62 /* AppColors.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ACBFB89F2C76898D00D3841F /* IPInfoFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPInfoFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBFB8A22C76898D00D3841F /* IPInfoFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPInfoFinderApp.swift; sourceTree = "<group>"; };
+		ACBFB8A42C76898D00D3841F /* IPDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPDetailsView.swift; sourceTree = "<group>"; };
+		ACBFB8A62C76898E00D3841F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACBFB8A92C76898E00D3841F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACBFB8B12C7689A900D3841F /* IPInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPInfo.swift; sourceTree = "<group>"; };
+		ACBFB8B32C7689BD00D3841F /* IPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPResponse.swift; sourceTree = "<group>"; };
+		ACBFB8B62C7689E000D3841F /* IPInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPInfoViewModel.swift; sourceTree = "<group>"; };
+		ACBFB8B92C768A2400D3841F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		ACBFB8BC2C768A4300D3841F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ACBFB8C02C768FC700D3841F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		ACD0CF142C769D3B0099AE62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ACD0CF152C769D5B0099AE62 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		ACD0CF172C769D710099AE62 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		ACD0CF192C769D800099AE62 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		ACD0CF1B2C76A14F0099AE62 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		ACD0CF712C7B65F30099AE62 /* InfoTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTitles.swift; sourceTree = "<group>"; };
+		ACD0CF732C7B6AF50099AE62 /* IPInfoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPInfoError.swift; sourceTree = "<group>"; };
+		ACD0CF752C7B6F4E0099AE62 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		ACD0CF832C7B75DA0099AE62 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		ACD0CF852C7B75FF0099AE62 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		ACD0CF872C7B76800099AE62 /* IPValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPValidator.swift; sourceTree = "<group>"; };
+		ACD0CF8A2C7B77D90099AE62 /* CustomMapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapMarker.swift; sourceTree = "<group>"; };
+		ACD0CF8C2C7B77E70099AE62 /* MapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
+		ACD0CF8E2C7B77F60099AE62 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		ACD0CF902C7B79730099AE62 /* IPInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPInfoView.swift; sourceTree = "<group>"; };
+		ACD0CF922C7B798A0099AE62 /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
+		ACD0CF942C7B799B0099AE62 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		ACD0CF962C7B7A090099AE62 /* CustomErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrorView.swift; sourceTree = "<group>"; };
+		ACD0CF992C7B7C270099AE62 /* Extensions+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIApplication.swift"; sourceTree = "<group>"; };
+		ACD0CF9B2C7B7C820099AE62 /* Extensions+NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+NetworkError.swift"; sourceTree = "<group>"; };
+		ACD0CF9D2C7B7CD20099AE62 /* Extensions+IPInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+IPInfo.swift"; sourceTree = "<group>"; };
+		ACD0CFA32C7B81500099AE62 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACBFB89C2C76898D00D3841F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACBFB8962C76898D00D3841F = {
+			isa = PBXGroup;
+			children = (
+				ACBFB8A12C76898D00D3841F /* IPInfoFinder */,
+				ACBFB8A02C76898D00D3841F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACBFB8A02C76898D00D3841F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACBFB89F2C76898D00D3841F /* IPInfoFinder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACBFB8A12C76898D00D3841F /* IPInfoFinder */ = {
+			isa = PBXGroup;
+			children = (
+				ACBFB8A22C76898D00D3841F /* IPInfoFinderApp.swift */,
+				ACD0CF142C769D3B0099AE62 /* Info.plist */,
+				ACD0CF132C769D2C0099AE62 /* Fonts */,
+				ACBFB8BB2C768A3700D3841F /* Utilities */,
+				ACBFB8B82C768A1A00D3841F /* Services */,
+				ACBFB8B02C76899D00D3841F /* Models */,
+				ACBFB8B52C7689D300D3841F /* ViewModels */,
+				ACD0CF9F2C7B7D4A0099AE62 /* Views */,
+				ACBFB8A62C76898E00D3841F /* Assets.xcassets */,
+				ACD0CF982C7B7BF40099AE62 /* Extensions */,
+				ACBFB8A82C76898E00D3841F /* Preview Content */,
+			);
+			path = IPInfoFinder;
+			sourceTree = "<group>";
+		};
+		ACBFB8A82C76898E00D3841F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ACBFB8A92C76898E00D3841F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACBFB8B02C76899D00D3841F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACBFB8B12C7689A900D3841F /* IPInfo.swift */,
+				ACBFB8B32C7689BD00D3841F /* IPResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACBFB8B52C7689D300D3841F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ACBFB8B62C7689E000D3841F /* IPInfoViewModel.swift */,
+				ACD0CF8E2C7B77F60099AE62 /* MapViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ACBFB8B82C768A1A00D3841F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ACBFB8B92C768A2400D3841F /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ACBFB8BB2C768A3700D3841F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ACBFB8BC2C768A4300D3841F /* Constants.swift */,
+				ACD0CF712C7B65F30099AE62 /* InfoTitles.swift */,
+				ACD0CF732C7B6AF50099AE62 /* IPInfoError.swift */,
+				ACD0CF1B2C76A14F0099AE62 /* AppFont.swift */,
+				ACD0CFA32C7B81500099AE62 /* AppColors.swift */,
+				ACD0CF872C7B76800099AE62 /* IPValidator.swift */,
+				ACD0CF752C7B6F4E0099AE62 /* NetworkError.swift */,
+				ACD0CFA52C7B82F60099AE62 /* CustomElements */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		ACD0CF132C769D2C0099AE62 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				ACD0CF152C769D5B0099AE62 /* Montserrat-Bold.ttf */,
+				ACD0CF172C769D710099AE62 /* Montserrat-Medium.ttf */,
+				ACD0CF192C769D800099AE62 /* Montserrat-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		ACD0CF982C7B7BF40099AE62 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ACD0CF992C7B7C270099AE62 /* Extensions+UIApplication.swift */,
+				ACD0CF9B2C7B7C820099AE62 /* Extensions+NetworkError.swift */,
+				ACD0CF9D2C7B7CD20099AE62 /* Extensions+IPInfo.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACD0CF9F2C7B7D4A0099AE62 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACD0CFA02C7B7F0D0099AE62 /* IPInfo */,
+				ACD0CFA12C7B7F1D0099AE62 /* Map */,
+				ACD0CFA22C7B7F2C0099AE62 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ACD0CFA02C7B7F0D0099AE62 /* IPInfo */ = {
+			isa = PBXGroup;
+			children = (
+				ACBFB8A42C76898D00D3841F /* IPDetailsView.swift */,
+				ACD0CF902C7B79730099AE62 /* IPInfoView.swift */,
+			);
+			path = IPInfo;
+			sourceTree = "<group>";
+		};
+		ACD0CFA12C7B7F1D0099AE62 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				ACBFB8C02C768FC700D3841F /* MapView.swift */,
+				ACD0CF8C2C7B77E70099AE62 /* MapPin.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		ACD0CFA22C7B7F2C0099AE62 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ACD0CF922C7B798A0099AE62 /* InfoRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		ACD0CFA52C7B82F60099AE62 /* CustomElements */ = {
+			isa = PBXGroup;
+			children = (
+				ACD0CF832C7B75DA0099AE62 /* CustomButton.swift */,
+				ACD0CF852C7B75FF0099AE62 /* CustomTextField.swift */,
+				ACD0CF942C7B799B0099AE62 /* CustomAlertView.swift */,
+				ACD0CF962C7B7A090099AE62 /* CustomErrorView.swift */,
+				ACD0CF8A2C7B77D90099AE62 /* CustomMapMarker.swift */,
+			);
+			path = CustomElements;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACBFB89E2C76898D00D3841F /* IPInfoFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBFB8AD2C76898E00D3841F /* Build configuration list for PBXNativeTarget "IPInfoFinder" */;
+			buildPhases = (
+				ACBFB89B2C76898D00D3841F /* Sources */,
+				ACBFB89C2C76898D00D3841F /* Frameworks */,
+				ACBFB89D2C76898D00D3841F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IPInfoFinder;
+			productName = IPInfoFinder;
+			productReference = ACBFB89F2C76898D00D3841F /* IPInfoFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACBFB8972C76898D00D3841F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					ACBFB89E2C76898D00D3841F = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = ACBFB89A2C76898D00D3841F /* Build configuration list for PBXProject "IPInfoFinder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACBFB8962C76898D00D3841F;
+			productRefGroup = ACBFB8A02C76898D00D3841F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACBFB89E2C76898D00D3841F /* IPInfoFinder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACBFB89D2C76898D00D3841F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBFB8AA2C76898E00D3841F /* Preview Assets.xcassets in Resources */,
+				ACBFB8A72C76898E00D3841F /* Assets.xcassets in Resources */,
+				ACD0CF182C769D710099AE62 /* Montserrat-Medium.ttf in Resources */,
+				ACD0CF1A2C769D800099AE62 /* Montserrat-Regular.ttf in Resources */,
+				ACD0CF162C769D5B0099AE62 /* Montserrat-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACBFB89B2C76898D00D3841F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACD0CF722C7B65F30099AE62 /* InfoTitles.swift in Sources */,
+				ACBFB8A52C76898D00D3841F /* IPDetailsView.swift in Sources */,
+				ACBFB8A32C76898D00D3841F /* IPInfoFinderApp.swift in Sources */,
+				ACD0CFA42C7B81500099AE62 /* AppColors.swift in Sources */,
+				ACBFB8B22C7689A900D3841F /* IPInfo.swift in Sources */,
+				ACD0CF932C7B798A0099AE62 /* InfoRow.swift in Sources */,
+				ACD0CF842C7B75DA0099AE62 /* CustomButton.swift in Sources */,
+				ACD0CF8B2C7B77D90099AE62 /* CustomMapMarker.swift in Sources */,
+				ACD0CF9E2C7B7CD20099AE62 /* Extensions+IPInfo.swift in Sources */,
+				ACD0CF9C2C7B7C820099AE62 /* Extensions+NetworkError.swift in Sources */,
+				ACBFB8B42C7689BD00D3841F /* IPResponse.swift in Sources */,
+				ACBFB8BD2C768A4300D3841F /* Constants.swift in Sources */,
+				ACD0CF742C7B6AF50099AE62 /* IPInfoError.swift in Sources */,
+				ACD0CF1C2C76A14F0099AE62 /* AppFont.swift in Sources */,
+				ACD0CF8F2C7B77F60099AE62 /* MapViewModel.swift in Sources */,
+				ACBFB8BA2C768A2400D3841F /* NetworkService.swift in Sources */,
+				ACD0CF8D2C7B77E70099AE62 /* MapPin.swift in Sources */,
+				ACD0CF882C7B76800099AE62 /* IPValidator.swift in Sources */,
+				ACD0CF952C7B799B0099AE62 /* CustomAlertView.swift in Sources */,
+				ACD0CF762C7B6F4E0099AE62 /* NetworkError.swift in Sources */,
+				ACBFB8C12C768FC700D3841F /* MapView.swift in Sources */,
+				ACD0CF912C7B79730099AE62 /* IPInfoView.swift in Sources */,
+				ACBFB8B72C7689E000D3841F /* IPInfoViewModel.swift in Sources */,
+				ACD0CF862C7B75FF0099AE62 /* CustomTextField.swift in Sources */,
+				ACD0CF972C7B7A090099AE62 /* CustomErrorView.swift in Sources */,
+				ACD0CF9A2C7B7C270099AE62 /* Extensions+UIApplication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ACBFB8AB2C76898E00D3841F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACBFB8AC2C76898E00D3841F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACBFB8AE2C76898E00D3841F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IPInfoFinder/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IPInfoFinder/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.IPInfoFinder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		ACBFB8AF2C76898E00D3841F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IPInfoFinder/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IPInfoFinder/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.IPInfoFinder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACBFB89A2C76898D00D3841F /* Build configuration list for PBXProject "IPInfoFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBFB8AB2C76898E00D3841F /* Debug */,
+				ACBFB8AC2C76898E00D3841F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBFB8AD2C76898E00D3841F /* Build configuration list for PBXNativeTarget "IPInfoFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBFB8AE2C76898E00D3841F /* Debug */,
+				ACBFB8AF2C76898E00D3841F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACBFB8972C76898D00D3841F /* Project object */;
+}
