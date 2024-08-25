@@ -11,7 +11,7 @@ struct InfoRow: View {
     // MARK: Properties
     let title: String
     let value: String
-    var valueColor: Color = .primary
+    var valueColor: Color = AppColors.basicsDark
     var isValueButton: Bool = false
     var onValueTap: (() -> Void)?
     var destination: (() -> AnyView)?
@@ -23,7 +23,6 @@ struct InfoRow: View {
             contentView
             Spacer()
         }
-        .padding(.vertical, 4)
     }
 }
 

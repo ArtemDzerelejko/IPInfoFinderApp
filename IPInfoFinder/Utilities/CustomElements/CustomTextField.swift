@@ -23,7 +23,7 @@ struct CustomTextField: View {
         HStack(spacing: 4) {
             if text.isEmpty {
                 Image(Constants.magnifyingglassForTextField)
-                    .foregroundColor(AppColors.greyBlue)
+//                    .foregroundColor(AppColors.greyBlue)
             }
             
             ZStack(alignment: .leading) {
@@ -52,7 +52,8 @@ struct CustomTextField: View {
                 }
             }
         }
-        .padding(16)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
         .frame(height: 44)
         .overlay(
             RoundedRectangle(cornerRadius: 10)

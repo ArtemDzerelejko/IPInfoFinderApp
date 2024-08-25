@@ -17,6 +17,7 @@ struct CustomButton: View {
     var font: Font = AppFont.headlineThree
     var height: CGFloat = 44
     var cornerRadius: CGFloat = 10
+    var horizontalPadding: CGFloat = 10
     
     // MARK: - Body
     var body: some View {
@@ -25,6 +26,7 @@ struct CustomButton: View {
                 .font(font)
                 .frame(maxWidth: .infinity)
                 .frame(height: height)
+                .padding(.horizontal, horizontalPadding)
                 .background(backgroundColor)
                 .foregroundColor(textColor)
                 .cornerRadius(cornerRadius)
