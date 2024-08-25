@@ -29,7 +29,7 @@ The app is built using the **MVVM (Model-View-ViewModel)** architecture pattern,
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/IPInfoFinderApp.git
+   git clone https://github.com/ArtemDzerelejko/IPInfoFinderApp.git
 2. Open `IPInfoFinder.xcodeproj` in Xcode.
 3. Build and run the project on your iPhone or iOS Simulator.
 
