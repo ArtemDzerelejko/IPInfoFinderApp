@@ -10,10 +10,13 @@ import Foundation
 struct IPValidator {
     // MARK: - Validation
     static func isValid(_ ip: String) -> Bool {
-        let ipRegex = "\\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b"
-        let ipPredicate = NSPredicate(format: "SELF MATCHES %@", ipRegex)
-        return ipPredicate.evaluate(with: ip)
-    }
+         let ipRegex = #"^(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\."# +
+                       #"(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\."# +
+                       #"(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\."# +
+                       #"(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)$"#
+         let ipPredicate = NSPredicate(format: "SELF MATCHES %@", ipRegex)
+         return ipPredicate.evaluate(with: ip)
+     }
     
     // MARK: - Formatting
     static func formatInput(_ input: String) -> String {

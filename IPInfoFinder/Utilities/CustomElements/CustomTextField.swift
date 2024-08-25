@@ -73,11 +73,11 @@ struct CustomTextField: View {
     
     private var borderColor: Color {
         if text.isEmpty {
-            return .greyBlue
+            return AppColors.greyBlue
         } else if isValid {
-            return .blueMain
+            return AppColors.blueMain
         } else {
-            return .redMain
+            return AppColors.redMain
         }
     }
     

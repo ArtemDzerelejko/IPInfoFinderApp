@@ -11,22 +11,24 @@ struct IPInfoView: View {
     let ipInfo: IPInfo
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 12) {
-                ForEach(IPInfoRowType.allCases, id: \.self) { rowType in
-                    createInfoRow(for: rowType)
+        if #available(iOS 16.0, *) {
+            ScrollView {
+                VStack(spacing: 12) {
+                    ForEach(IPInfoRowType.allCases, id: \.self) { rowType in
+                        createInfoRow(for: rowType)
+                    }
                 }
+                .frame(maxWidth: .infinity)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(AppColors.greyBlue, lineWidth: 1)
+                )
             }
-            .frame(maxWidth: .infinity)
-            .padding(.horizontal, 16)
-            .padding(.vertical, 12)
-            .overlay(
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.greyBlue, lineWidth: 1)
-            )
-        }
-        .scrollDisabled(false)
-        .scrollIndicators(.hidden)
+            .scrollDisabled(false)
+            .scrollIndicators(.hidden)
+        } else {}
     }
 }
 
@@ -62,7 +64,7 @@ private extension IPInfoView {
         InfoRow(
             title: InfoTitles.location,
             value: ipInfo.loc,
-            valueColor: .blueMain,
+            valueColor: AppColors.blueMain,
             isValueButton: true,
             destination: {
                 AnyView(
@@ -80,7 +82,7 @@ private extension IPInfoView {
         InfoRow(
             title: InfoTitles.readme,
             value: ipInfo.readme,
-            valueColor: .blueMain,
+            valueColor: AppColors.blueMain,
             isValueButton: true,
             onValueTap: {
                 if let url = URL(string: ipInfo.readme) {

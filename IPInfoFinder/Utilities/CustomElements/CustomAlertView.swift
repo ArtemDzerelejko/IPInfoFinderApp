@@ -18,14 +18,20 @@ struct CustomAlertView: View {
         static let alertWidth: CGFloat = 270
         static let alertHeight: CGFloat = 138
         static let cornerRadius: CGFloat = 14
-        static let verticalOffset: CGFloat = 337 + 69
     }
     
     // MARK: Body
     var body: some View {
-        ZStack {
-            backgroundOverlay
-            alertContent
+        GeometryReader { geometry in
+            ZStack {
+                backgroundOverlay
+                alertContent
+                    .frame(width: Constants.alertWidth, height: Constants.alertHeight)
+                    .background(Color.white)
+                    .cornerRadius(Constants.cornerRadius)
+                    .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
+            }
+            .edgesIgnoringSafeArea(.all)
         }
     }
 }
@@ -43,10 +49,7 @@ private extension CustomAlertView {
             Divider()
             buttonSection
         }
-        .frame(width: Constants.alertWidth, height: Constants.alertHeight)
-        .background(Color.white)
-        .cornerRadius(Constants.cornerRadius)
-        .position(x: UIScreen.main.bounds.width / 2, y: Constants.verticalOffset)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
     
     var messageContent: some View {

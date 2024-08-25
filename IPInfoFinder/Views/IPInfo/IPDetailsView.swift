@@ -42,9 +42,9 @@ struct IPDetailsView: View {
     
     private var buttonSection: some View {
         VStack(alignment: .center, spacing: 8) {
-            CustomButton(text: Constants.getInfoText, textColor: .white, backgroundColor: .blue, action: getInfoAction)
-            CustomButton(text: Constants.findMeText, textColor: .blueMain, backgroundColor: Color(.blueMedium), action: findMeAction)
-            CustomButton(text: Constants.resetText, textColor: .redMedium, backgroundColor: .redLight, action: resetAction)
+            CustomButton(text: Constants.getInfoText, textColor: .white, backgroundColor: AppColors.blueMain, action: getInfoAction)
+            CustomButton(text: Constants.findMeText, textColor: AppColors.blueMain, backgroundColor: AppColors.blueMedium, action: findMeAction)
+            CustomButton(text: Constants.resetText, textColor: AppColors.redMedium, backgroundColor: AppColors.redLight, action: resetAction)
         }
         .padding(.bottom, 12)
     }
